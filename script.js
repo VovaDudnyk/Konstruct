@@ -3,7 +3,7 @@ document.querySelector('.scroll').addEventListener('click', function() {
     if (mainAboutSection) {
         window.scrollTo({
             top: mainAboutSection.offsetTop,
-            behavior: 'smooth'
+            behavior: 'smooth '
         });
     }
 });
