@@ -9,8 +9,8 @@ body {
 .header .logo {
 	position: absolute;
 	left: 50%;
-	top: 5%;
-	transform: translate(-50%, -50%);
+	top: 5% ;
+	transform: translate(-50%, -50%); 
 }
 
 .header .bg {
@@ -31,6 +31,11 @@ body {
 	width: 100%;
 	top: 50%;
 	left: 0;
+	
+}
+.partner {
+	padding-top: 30px;
+	margin: 0;
 }
 .header .award {
 	position: absolute;
@@ -44,8 +49,12 @@ body {
 	width: 100%;
 	top: 60%;
 	left: 0;
+	z-index: 2;
 }
-
+.award{
+	padding-top: 30px;
+    margin: 0;
+}
 .header .scroll {
 	position: absolute;
 	color: #fff;
@@ -59,6 +68,21 @@ body {
 	bottom: 5%;
 	left: 50%;
 	transform: translateX(-50%);
+}
+.scroll{
+	border: none;
+	background-color: transparent;
+	color: #fff;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 11px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: 3.7px;
+    position: absolute;
+    bottom: 5%;
+    left: 50%;
+    transform: translateX(-50%);
 }
 .navbar {
 	position: relative;
@@ -106,10 +130,26 @@ a {
 	text-decoration: none;
 	color: #48555b;
 }
+
 .about {
-	color: #00a4e5;
+		color: #00a4e5;
+}
+.navbar a {
+    color: #48555b; 
+    transition: color 0.3s ease; 
 }
 
+.navbar a:hover {
+    color: #00a4e5;
+}
+
+.about a {
+    color: #48555b;
+}
+
+.about a:hover {
+    color: #00a4e5;
+}
 .title {
 	color: #48555b;
 	text-align: center;
@@ -499,4 +539,20 @@ a {
 	font-weight: 400;
 	line-height: normal;
 	letter-spacing: 0.846px;
+}
+
+.button,
+.nav-list a,
+.service-btn,
+.news-btn,
+.work-btn {
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.button:hover,
+.service-btn:hover,
+.news-btn:hover,
+.work-btn:hover {
+    background-color: #2980b9;
+    color: #fff;
 }

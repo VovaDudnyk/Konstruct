@@ -2,7 +2,8 @@
 <html lang="en">
 	<head>
 		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<!-- <meta name="viewport" content="width=device-width, initial-scale=1.0" /> -->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
 		<link rel="stylesheet" href="./style.css" />
 		<link rel="preconnect" href="https://fonts.googleapis.com" />
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -14,17 +15,17 @@
 	<body>
 		<header class="header">
 			<div class="logo">
-				<img src="img/projeco-logo.svg" alt="" />
+				<a href="#"><img src="img/projeco-logo.svg" alt="" /></a>
 			</div>
-			<img class="bg" src="img/bg.png" />
+			<img class="bg" src="img/bg.png" style="max-width: 100%;"/>
 
-			<div class="partner">PARTNER WITH KONSTUCT</div>
+			<h1 class="partner">PARTNER WITH KONSTUCT</h1>
 			<p class="award">An award-winning construction management firm</p>
-			<p class="scroll">SCROLL DOWN</p>
+			<button class="scroll">SCROLL DOWN</button>
 		</header>
 		<div class="navbar">
 			<div class="navbar-logo">
-				<img src="img/projeco-logo-black.svg" alt="" />
+				<a href="#"><img src="img/projeco-logo-black.svg" alt="" /></a>
 			</div>
 			<nav class="nav-list">
 				<ul>
@@ -80,7 +81,7 @@
 					<button class="service-btn">ALL SERVICES</button>
 				</div>
 				<ul class="service-list">
-					<li class="service-item">
+					<div class="service-item">
 						<img class="service-img" src="img/pen.png" />
 						<h3 class="h3-text">PROJECT AND CONSTRUCTION MANAGEMENT</h3>
 						<p class="services-text">
@@ -88,8 +89,8 @@
 							nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam
 							erat.
 						</p>
-					</li>
-					<li class="service-item">
+					</div>
+					<div class="service-item">
 						<img class="service-img" src="img/market.png" />
 						<h3 class="h3-text">STRUCTURE AUDIT AND MAINTENANCE</h3>
 						<p class="services-text">
@@ -97,8 +98,8 @@
 							nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam
 							erat.
 						</p>
-					</li>
-					<li class="service-item">
+					</div>
+					<div class="service-item">
 						<img class="service-img" src="img/bank.png" />
 						<h3 class="h3-text">FACTORY CONSTRUCTION AND MODELING</h3>
 						<p class="services-text">
@@ -106,7 +107,7 @@
 							nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam
 							erat.
 						</p>
-					</li>
+					</div>
 				</ul>
 			</section>
 			<section class="work">
@@ -150,21 +151,21 @@
 						<h2 class="footer-title-text-links">LINKS</h2>
 						<div class="footer-row">
 							<div class="footer-column">
-								<a>HOME</a>
-								<a>ABOUT</a>
-								<a>SERVICES</a>
-								<a>PROJECTS</a>
-								<a>CONTACT US</a>
+								<a href="#">HOME</a>
+								<a href="#">ABOUT</a>
+								<a href="#">SERVICES</a>
+								<a href="#">PROJECTS</a>
+								<a href="#">CONTACT US</a>
 							</div>
 							<div class="footer-column">
-								<a>FAQ</a>
-								<a>TERMS</a>
-								<a>CAREERS</a>
+								<a href="#">FAQ</a>
+								<a href="#">TERMS</a>
+								<a href="#">CAREERS</a>
 							</div>
 							<div class="footer-column">
-								<a>BLOG</a>
-								<a>PARTNERS</a>
-								<a>NEWS</a>
+								<a href="#">BLOG</a>
+								<a href="#">PARTNERS</a>
+								<a href="#">NEWS</a>
 							</div>
 						</div>
 					</div>
@@ -173,27 +174,27 @@
 						<div class="contact-row">
 							<h3 class="footer_title-text">CONTACT US</h3>
 							<div class="contact-column">
-								<li>213 Baker Street</li>
+								<a href="#"><li>213 Baker Street</li>
 								<li>Oriel City Kounty</li>
 								<li>7000 KNW,</li>
-								<li>Kountry Name</li>
+								<li>Kountry Name</li></a>
 								<p></p>
-								<li>+23 994 233 4022</li>
+								<a href="#"><li>+23 994 233 4022</li></a>
 								<p></p>
-								<li>info@konstruct.com</li>
+								<a href="#"><li>info@konstruct.com</li></a>
 							</div>
 						</div>
 					</div>
 					<div class="footer_social_media">
 						<ul class="footer_social_media_list">
 							<li>
-								<img src="img/facebook.png" />
+								<a href="#"><img src="img/facebook.png" /></a>
 							</li>
 							<li>
-								<img src="img/Twitter.png" />
+								<a href="#"><img src="img/Twitter.png" /></a>
 							</li>
 							<li>
-								<img src="img/Google.png" />
+								<a href="#"><img src="img/Google.png" /></a>
 							</li>
 						</ul>
 					</div>
@@ -206,5 +207,6 @@
 				</p>
 			</div>
 		</footer>
+		<script src="script.js"></script>
 	</body>
 </html>
