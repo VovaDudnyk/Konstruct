@@ -293,11 +293,6 @@
     margin-right: 50px;
   }
 }
-@media screen and (min-width: 200px) and (max-width: 430px) {
-  .navbar-content {
-    display: none;
-  }
-}
 
 @media only screen and (max-width: 992px) {
   .main-modal {
