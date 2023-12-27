@@ -14,11 +14,6 @@
       <div class="container">
         <div class="header-content">
           <a href="#"><img src="img/projeco-logo.svg" class="logo-white" /></a>
-          <label class="burger">
-            <span></span>
-            <span></span>
-            <span></span>
-          </label>
           <h1 class="header-title">PARTNER WITH KONSTUCT</h1>
           <p class="header-description">
             An award-winning construction management firm
@@ -35,7 +30,7 @@
           /></a>
 
           <div class="navbar-links">
-            <ul class="navbar-list">
+            <ul class="navbar-list" id="menu">
               <li class="navbar-item"><a href="#">Home</a></li>
               <li class="navbar-item"><a href="#">About</a></li>
               <li class="navbar-item"><a href="#">Services</a></li>
@@ -123,7 +118,7 @@
               nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam
               erat.
             </p>
-            <button href="#" class="btn">All services</button>
+            <button class="btn">All services</button>
           </div>
 
           <div class="services-grid">
@@ -175,7 +170,7 @@
       <div class="container">
         <div class="get-inner">
           <h2 class="main-title-h2">Want to build something amazing?</h2>
-          <button href="#" class="btn">Get in touch</button>
+          <button class="btn">Get in touch</button>
         </div>
       </div>
     </section>
@@ -203,10 +198,10 @@
       <div class="container">
         <div class="newsletter-inner">
           <h3 class="main-title-h3">Newsletter Signup</h3>
-          <div class="newsletter-row">
-            <input type="text" placeholder="test@youremail.com" />
-            <button href="#" class="btn">Signup</button>
-          </div>
+          <form class="newsletter-row" >
+            <input class ="email"type="text" placeholder="test@youremail.com" />
+            <input class="btn" type="submit" value="Signup"></input>
+          </form>
         </div>
       </div>
     </section>
@@ -228,11 +223,11 @@
             <h5 class="main-title-h5 main-title-h5-links">Links</h5>
             <div class="links-flex">
               <ul class="links-flex-1">
-                <a class="links-flex-item"><li>Home</li></a>
-                <a class="links-flex-item"><li>About</li></a>
-                <a class="links-flex-item"><li>Services</li></a>
-                <a class="links-flex-item"><li>Projects</li></a>
-                <a class="links-flex-item"><li>Contact us</li></a>
+                <a class="links-flex-item" href="#"><li>Home</li></a>
+                <a class="links-flex-item" href="#"><li>About</li></a>
+                <a class="links-flex-item" href="#"><li>Services</li></a>
+                <a class="links-flex-item" href="#"><li>Projects</li></a>
+                <a class="links-flex-item" href="#"><li>Contact us</li></a>
               </ul>
               <ul class="links-flex-2">
                 <a class="links-flex-item" href="#"><li>Faq</li></a>
@@ -248,18 +243,19 @@
           </div>
           <div class="footer-contact-us">
             <h5 class="main-title-h5 main-title-h5-contact-us">Contact us</h5>
-            <p class="footer-contact-us-p">
-              213 Baker Street<br />Oriel City Kounty<br />7000 KNW,<br />Kountry
-              Name<br /><br />
-              <a href="#">+23 994 233 4022</a><br /><br />
-              <a href="#">info@konstruct.com </a>
-            </p>
+            <ul class="footer-contact-list">
+              <li>213 Baker Street</li>
+              <li>Oriel City Kounty</li>
+              <li>7000 KNW, Kountry Name</li>
+              <li><a href="#">+23 994 233 4022</a></li>
+              <li><a href="mailto:info@konstruct.com">info@konstruct.com</a></li>
+            </ul>
           </div>
           <div class="footer-icon">
             <div class="icon-flex">
-              <a href="#" class="icon-flex-item icon-fb"></a>
-              <a href="#" class="icon-flex-item icon-tw"></a>
-              <a href="#" class="icon-flex-item icon-g"></a>
+              <a class="icon-flex-item icon-fb" href="#"></a>
+              <a class="icon-flex-item icon-tw" href="#"></a>
+              <a class="icon-flex-item icon-g" href="#"></a>
             </div>
           </div>
         </div>
@@ -272,6 +268,14 @@
         </p>
       </div>
     </footer>
+    <div class="popup" id="popup"></div>
+    <div class="humb">
+        <div class="humb__field" id="humb">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+    </div>
     <script src="js/script.js"></script>
   </body>
 </html>
